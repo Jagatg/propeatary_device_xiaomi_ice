@@ -1366,25 +1366,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.mtdservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mtdservice@1.1.so \
     vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.mtdservice@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mtdservice@1.2.so \
     vendor/xiaomi/ice/proprietary/vendor/lib/wechat.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/wechat.beanpod.so \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/NOTICE_GPL.xml.gz:$(TARGET_COPY_OUT_ODM)/odm/etc/NOTICE_GPL.xml.gz \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sfg.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sfg.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sfin.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sfin.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sfinh.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sfinh.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sg.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sg.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sin.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sin.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sinh.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sinh.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sl.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sl.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sp.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sp.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/build_c3sph.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_c3sph.prop \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/vintf/manifest_dsds.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_dsds.xml \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/vintf/manifest_qsqs.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_qsqs.xml \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/vintf/manifest_ss.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_ss.xml \
-    vendor/xiaomi/ice/proprietary/vendor/odm/etc/vintf/manifest_tsts.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_tsts.xml \
-    vendor/xiaomi/ice/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
-    vendor/xiaomi/ice/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
-    vendor/xiaomi/ice/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
-    vendor/xiaomi/ice/proprietary/vendor/res/sound/ringtone.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/ringtone.wav \
-    vendor/xiaomi/ice/proprietary/vendor/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav \
     vendor/xiaomi/ice/proprietary/vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/0102030405060708090a0b0c0d0e0f10.ta \
     vendor/xiaomi/ice/proprietary/vendor/thh/ta/511ead0a000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/511ead0a000000000000000000000000.ta \
     vendor/xiaomi/ice/proprietary/vendor/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta \
