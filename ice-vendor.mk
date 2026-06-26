@@ -1408,6 +1408,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@2.0 \
     vendor.xiaomi.hardware.misys@3.0 \
     vibrator-mtk-default
+
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.vibrator-V2-ndk.so
 
+PRODUCT_PACKAGES += ImsService
