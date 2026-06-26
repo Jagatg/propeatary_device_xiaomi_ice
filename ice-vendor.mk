@@ -6,6 +6,7 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/ice
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.vibrator-V2-ndk.so \
     vendor/xiaomi/ice/proprietary/vendor/bin/AgentTest:$(TARGET_COPY_OUT_VENDOR)/bin/AgentTest \
     vendor/xiaomi/ice/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/xiaomi/ice/proprietary/vendor/bin/aee_aedv:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv \
@@ -1407,3 +1408,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@2.0 \
     vendor.xiaomi.hardware.misys@3.0 \
     vibrator-mtk-default
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.vibrator-V2-ndk.so
+
