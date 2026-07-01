@@ -6,8 +6,116 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/ice
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.vibrator-V2-ndk.so \
+    vendor/xiaomi/ice/proprietary/vendor/bin/AgentTest:$(TARGET_COPY_OUT_VENDOR)/bin/AgentTest \
+    vendor/xiaomi/ice/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
+    vendor/xiaomi/ice/proprietary/vendor/bin/aee_aedv:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv \
+    vendor/xiaomi/ice/proprietary/vendor/bin/aee_dumpstatev:$(TARGET_COPY_OUT_VENDOR)/bin/aee_dumpstatev \
+    vendor/xiaomi/ice/proprietary/vendor/bin/aeev:$(TARGET_COPY_OUT_VENDOR)/bin/aeev \
+    vendor/xiaomi/ice/proprietary/vendor/bin/atci_service:$(TARGET_COPY_OUT_VENDOR)/bin/atci_service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/atcid:$(TARGET_COPY_OUT_VENDOR)/bin/atcid \
+    vendor/xiaomi/ice/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
+    vendor/xiaomi/ice/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
+    vendor/xiaomi/ice/proprietary/vendor/bin/bip:$(TARGET_COPY_OUT_VENDOR)/bin/bip \
+    vendor/xiaomi/ice/proprietary/vendor/bin/bp_kmsetkey_ca:$(TARGET_COPY_OUT_VENDOR)/bin/bp_kmsetkey_ca \
+    vendor/xiaomi/ice/proprietary/vendor/bin/cal_tool:$(TARGET_COPY_OUT_VENDOR)/bin/cal_tool \
+    vendor/xiaomi/ice/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
+    vendor/xiaomi/ice/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
+    vendor/xiaomi/ice/proprietary/vendor/bin/charge_logger:$(TARGET_COPY_OUT_VENDOR)/bin/charge_logger \
+    vendor/xiaomi/ice/proprietary/vendor/bin/charon:$(TARGET_COPY_OUT_VENDOR)/bin/charon \
     vendor/xiaomi/ice/proprietary/vendor/bin/chipinfo:$(TARGET_COPY_OUT_VENDOR)/bin/chipinfo \
+    vendor/xiaomi/ice/proprietary/vendor/bin/dconfig:$(TARGET_COPY_OUT_VENDOR)/bin/dconfig \
+    vendor/xiaomi/ice/proprietary/vendor/bin/dexecutor:$(TARGET_COPY_OUT_VENDOR)/bin/dexecutor \
+    vendor/xiaomi/ice/proprietary/vendor/bin/dmabuf_dump:$(TARGET_COPY_OUT_VENDOR)/bin/dmabuf_dump \
+    vendor/xiaomi/ice/proprietary/vendor/bin/dmc_core:$(TARGET_COPY_OUT_VENDOR)/bin/dmc_core \
+    vendor/xiaomi/ice/proprietary/vendor/bin/doeapp-memtester:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-memtester \
+    vendor/xiaomi/ice/proprietary/vendor/bin/doeapp-sat:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-sat \
+    vendor/xiaomi/ice/proprietary/vendor/bin/dtc_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/dtc_vendor \
+    vendor/xiaomi/ice/proprietary/vendor/bin/em_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/em_hidl \
+    vendor/xiaomi/ice/proprietary/vendor/bin/epdg_wod:$(TARGET_COPY_OUT_VENDOR)/bin/epdg_wod \
+    vendor/xiaomi/ice/proprietary/vendor/bin/factory:$(TARGET_COPY_OUT_VENDOR)/bin/factory \
+    vendor/xiaomi/ice/proprietary/vendor/bin/fuelgauged:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged \
+    vendor/xiaomi/ice/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service-lazy \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service-lazy.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service-lazy.clearkey \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service-lazy.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service-lazy.widevine \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.dumpstate@1.1-service.xiaomi \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.health@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service.beanpod \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.lights-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.lights-service.mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service-lazy \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/merged_hal_service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/merged_hal_service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.aee@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.aee@1.1-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mms@1.6-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nvram@1.1-service-lazy \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@1.0-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@2.0-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@3.0-service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
+    vendor/xiaomi/ice/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
     vendor/xiaomi/ice/proprietary/vendor/bin/init.insmod.sh:$(TARGET_COPY_OUT_VENDOR)/bin/init.insmod.sh \
+    vendor/xiaomi/ice/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
+    vendor/xiaomi/ice/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
+    vendor/xiaomi/ice/proprietary/vendor/bin/kmsetkey:$(TARGET_COPY_OUT_VENDOR)/bin/kmsetkey \
+    vendor/xiaomi/ice/proprietary/vendor/bin/loghidlvendorservice:$(TARGET_COPY_OUT_VENDOR)/bin/loghidlvendorservice \
+    vendor/xiaomi/ice/proprietary/vendor/bin/md_monitor:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor \
+    vendor/xiaomi/ice/proprietary/vendor/bin/md_monitor_ctrl:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor_ctrl \
+    vendor/xiaomi/ice/proprietary/vendor/bin/meta_tst:$(TARGET_COPY_OUT_VENDOR)/bin/meta_tst \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mrdump_tool:$(TARGET_COPY_OUT_VENDOR)/bin/mrdump_tool \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mt6660_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/mt6660_calibration \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mtd@1.2:$(TARGET_COPY_OUT_VENDOR)/bin/mtd@1.2 \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mtk_pkm_service:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_pkm_service \
+    vendor/xiaomi/ice/proprietary/vendor/bin/mtk_plpath_utils_ota:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_plpath_utils_ota \
+    vendor/xiaomi/ice/proprietary/vendor/bin/muxreport:$(TARGET_COPY_OUT_VENDOR)/bin/muxreport \
+    vendor/xiaomi/ice/proprietary/vendor/bin/netdagent:$(TARGET_COPY_OUT_VENDOR)/bin/netdagent \
+    vendor/xiaomi/ice/proprietary/vendor/bin/netdc:$(TARGET_COPY_OUT_VENDOR)/bin/netdc \
+    vendor/xiaomi/ice/proprietary/vendor/bin/nv_routing:$(TARGET_COPY_OUT_VENDOR)/bin/nv_routing \
+    vendor/xiaomi/ice/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
+    vendor/xiaomi/ice/proprietary/vendor/bin/pvrhwperfd:$(TARGET_COPY_OUT_VENDOR)/bin/pvrhwperfd \
+    vendor/xiaomi/ice/proprietary/vendor/bin/rcs_volte_stack:$(TARGET_COPY_OUT_VENDOR)/bin/rcs_volte_stack \
+    vendor/xiaomi/ice/proprietary/vendor/bin/rt5512_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/rt5512_calibration \
+    vendor/xiaomi/ice/proprietary/vendor/bin/rttv:$(TARGET_COPY_OUT_VENDOR)/bin/rttv \
+    vendor/xiaomi/ice/proprietary/vendor/bin/sensors_test:$(TARGET_COPY_OUT_VENDOR)/bin/sensors_test \
+    vendor/xiaomi/ice/proprietary/vendor/bin/starter:$(TARGET_COPY_OUT_VENDOR)/bin/starter \
+    vendor/xiaomi/ice/proprietary/vendor/bin/stp_dump3:$(TARGET_COPY_OUT_VENDOR)/bin/stp_dump3 \
+    vendor/xiaomi/ice/proprietary/vendor/bin/stroke:$(TARGET_COPY_OUT_VENDOR)/bin/stroke \
+    vendor/xiaomi/ice/proprietary/vendor/bin/teei_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/teei_daemon \
+    vendor/xiaomi/ice/proprietary/vendor/bin/thermal:$(TARGET_COPY_OUT_VENDOR)/bin/thermal \
+    vendor/xiaomi/ice/proprietary/vendor/bin/thermal_manager:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_manager \
+    vendor/xiaomi/ice/proprietary/vendor/bin/thermalloadalgod:$(TARGET_COPY_OUT_VENDOR)/bin/thermalloadalgod \
+    vendor/xiaomi/ice/proprietary/vendor/bin/vndservice:$(TARGET_COPY_OUT_VENDOR)/bin/vndservice \
+    vendor/xiaomi/ice/proprietary/vendor/bin/vndservicemanager:$(TARGET_COPY_OUT_VENDOR)/bin/vndservicemanager \
+    vendor/xiaomi/ice/proprietary/vendor/bin/volte_imcb:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imcb \
+    vendor/xiaomi/ice/proprietary/vendor/bin/volte_imsm_93:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imsm_93 \
+    vendor/xiaomi/ice/proprietary/vendor/bin/volte_md_status:$(TARGET_COPY_OUT_VENDOR)/bin/volte_md_status \
+    vendor/xiaomi/ice/proprietary/vendor/bin/volte_rcs_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_rcs_ua \
+    vendor/xiaomi/ice/proprietary/vendor/bin/volte_stack:$(TARGET_COPY_OUT_VENDOR)/bin/volte_stack \
+    vendor/xiaomi/ice/proprietary/vendor/bin/volte_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_ua \
+    vendor/xiaomi/ice/proprietary/vendor/bin/wfca:$(TARGET_COPY_OUT_VENDOR)/bin/wfca \
+    vendor/xiaomi/ice/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
+    vendor/xiaomi/ice/proprietary/vendor/bin/wmt_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_launcher \
+    vendor/xiaomi/ice/proprietary/vendor/bin/wmt_loader:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_loader \
+    vendor/xiaomi/ice/proprietary/vendor/bin/wpa_cli:$(TARGET_COPY_OUT_VENDOR)/bin/wpa_cli \
     vendor/xiaomi/ice/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/xiaomi/ice/proprietary/vendor/etc/.tp/.thermal_policy_00:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_00 \
     vendor/xiaomi/ice/proprietary/vendor/etc/.tp/.thermal_policy_03:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_03 \
@@ -183,12 +291,27 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service-mediatek-lazy.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.cas@1.2-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service-lazy.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.drm@1.4-service-lazy.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service-lazy.clearkey.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.drm@1.4-service-lazy.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service-lazy.widevine.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.dumpstate@1.1-service.xiaomi.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.health@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service.beanpod.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.2-mediatek.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/atci_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atci_service.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/chipinfo_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/chipinfo_init.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/dmc_core.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dmc_core.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
@@ -234,6 +357,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/init.volte_md_status.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_md_status.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/init.volte_stack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_stack.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/init.volte_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.volte_ua.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/init.vtservice_hidl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vtservice_hidl.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/init.wfca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wfca.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/init.wlan_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wlan_drv.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/init.wmt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.wmt_drv.rc \
@@ -242,6 +366,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/lights-mtk-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-lazy.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/merged_hal_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/merged_hal_service.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/microtrust.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/mtk_agpsd_p.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/mtk_agpsd_p.rc \
@@ -251,8 +376,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/muxreport.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/muxreport.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.1-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mms@1.6-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice-lazy.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.silead.hardware.fingerprintext@1.0-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/vibrator-mtk-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-lazy.rc \
+    vendor/xiaomi/ice/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/volte_rcs_ua.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/volte_rcs_ua.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/xiaomi/ice/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -292,6 +431,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.faketouch.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.faketouch.xml \
+    vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km41.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km41.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.microphone.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.microphone.xml \
     vendor/xiaomi/ice/proprietary/vendor/etc/permissions/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -338,6 +478,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/etc/rsc/ROW/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/ROW/rw.prop \
     vendor/xiaomi/ice/proprietary/vendor/etc/rsc/default/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/default/ro.prop \
     vendor/xiaomi/ice/proprietary/vendor/etc/rsc/default/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/default/rw.prop \
+    vendor/xiaomi/ice/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-extended-seccomp-policy \
+    vendor/xiaomi/ice/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.2-mediatek-seccomp-policy \
     vendor/xiaomi/ice/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/xiaomi/ice/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/xiaomi/ice/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
@@ -534,13 +676,696 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/ice/proprietary/vendor/firmware/soc1_0_ram_bt_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_1_1_hdr.bin \
     vendor/xiaomi/ice/proprietary/vendor/firmware/soc1_0_ram_mcu_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_1_1_hdr.bin \
     vendor/xiaomi/ice/proprietary/vendor/firmware/soc1_0_ram_wifi_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_1_1_hdr.bin \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.cameraservice.common@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.common@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.cameraservice.device@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.device@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.cameraservice.device@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.device@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.cameraservice.service@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.service@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.cameraservice.service@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.service@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.cameraservice.service@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.cameraservice.service@2.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.frameworks.sensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.sensorservice@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common-util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common@5.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@5.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common@6.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@6.0-util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common@6.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@6.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common@7.0-enums.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-enums.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0-util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.common@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.common@7.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.effect@6.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.effect@6.0-util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.effect@6.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.effect@6.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.effect@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.effect@7.0-util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio.effect@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio.effect@7.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio@6.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@6.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio@7.0-util.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.0-util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.audio@7.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.audio@7.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.biometrics.fingerprint@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.bluetooth.audio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth.audio@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.bluetooth@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.bluetooth@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.bluetooth@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.common@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.common@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.device@3.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.device@3.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.device@3.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.device@3.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.device@3.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.device@3.6.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.provider@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.provider@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.camera.provider@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.camera.provider@2.6.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.drm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.drm@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.drm@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.drm@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.drm@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.drm@1.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.dumpstate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.dumpstate@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.dumpstate@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.dumpstate@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss.measurement_corrections@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.measurement_corrections@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss.measurement_corrections@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.measurement_corrections@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss.visibility_control@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss.visibility_control@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.gnss@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.gnss@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.graphics.composer@2.1-resources.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1-resources.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.graphics.composer@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.health@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.health@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.health@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.health@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.health@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.health@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.keymaster@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@3.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.keymaster@4.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.keymaster@4.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.keymaster@4.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.light@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.light@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.media.c2@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.media.c2@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.media.c2@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.media.c2@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.power-service-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power-service-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.power@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.power@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.power@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio.config@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio.config@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio.config@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio.config@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio.config@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.radio@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.radio@1.6.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.sensors@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0-ScopedWakelock.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.sensors@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.sensors@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.sensors@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.soundtrigger@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.soundtrigger@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.soundtrigger@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.soundtrigger@2.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.soundtrigger@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.soundtrigger@2.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.thermal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.thermal@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.thermal@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.usb.gadget@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb.gadget@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.usb.gadget@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb.gadget@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.usb@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.usb@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.usb@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.usb@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.usb@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.hostapd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.hostapd@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.hostapd@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.hostapd@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.hostapd@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.hostapd@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.hostapd@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.hostapd@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.supplicant@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.supplicant@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.supplicant@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.supplicant@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.supplicant@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.supplicant@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.supplicant@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.supplicant@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi.supplicant@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi.supplicant@1.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi@1.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.wifi@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.wifi@1.5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hidl.memory.block@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.memory.block@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.system.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.system.wifi.keystore@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/audio_common-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audio_common-aidl-cpp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/audioclient-types-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/audioclient-types-aidl-cpp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.fingerprints.extension@1.0.so \
     vendor/xiaomi/ice/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libEGL_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libGLESv1_CM_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libGLESv2_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_gift.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_qt.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/framework-permission-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/framework-permission-aidl-cpp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@6.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.audio.effect@7.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@7.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.1-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.boot@1.0-impl-1.2-mtkimpl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.health@2.0-impl-2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.health@2.0-impl-2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.3-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/audio.primary.mt6761.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6761.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/audio.r_submix.mt6761.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6761.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio_policy.stub.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/awinic.audio.effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/awinic.audio.effect.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.fpc.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.goodix.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/fingerprint.silead.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/fingerprint.silead.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.beanpod.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/gralloc.rogue.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.rogue.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/hwcomposer.mt6761.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/hwcomposer.mt6761.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/lights.mt6761.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.mt6761.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/memtrack.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.default.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/sensors.mt6761.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sensors.mt6761.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal_hal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/hw/vibrator.mt6761.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.mt6761.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lbs_hidl_service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lbs_hidl_service-impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.core.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.af.core.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.af.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.awb.core.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.awb.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.flash.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDR.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libHEVCdec_sa.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libHEVCdec_sa.ca7.android.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libIMGegl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libIMGegl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libJpgEncPipe.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libMtkOmxCore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxCore.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libMtkOmxGsmDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxGsmDec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libMtkOmxMp3Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkOmxMp3Dec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libMtkSpeechEnh.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMtkSpeechEnh.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libNoFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libNoFpsActor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libPVRMtkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPVRMtkutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libPVROCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPVROCL.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libPVRScopeServices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libPVRScopeServices.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSQLiteModule_VER_ALL.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibrary.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX230PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX230PdafLibraryWrapper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX338PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX338PdafLibrary.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX338PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX338PdafLibraryWrapper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX386PdafLibrary.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX386PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX386PdafLibraryWrapper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX519PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519PdafLibrary.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSonyIMX519PdafLibraryWrapper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libTEECommon.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib_lowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_lowlight.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_speech_enh.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_key.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapmonitor_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapu_mdw.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libapusys.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapusys.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libapusys_edma.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapusys_edma.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_beautyshot.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libarcsoft_hdr_detection.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_hdr_detection.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libarcsoft_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_high_dynamic_range.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libarcsoft_low_light_hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarcsoft_low_light_hdr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libasn1c_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1c_core.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libasn1c_mapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1c_mapi.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libasn1c_mdmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libasn1c_mdmi.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudioclient_aidl_conversion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioclient_aidl_conversion.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiocompensationfilterc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilterc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiocomponentengine_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentengine_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiocomponentenginec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocomponentenginec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofmtconv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioloudc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libaurisysdemo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaurisysdemo.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libavservices_minijail_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libavservices_minijail_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_hw_test.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetooth_mtk_pure.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk_pure.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetooth_relayer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_relayer.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetoothem_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.chdr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.feature_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.hal3a.cctsvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.cctsvr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.log.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.dng.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.hal3a.v3.lsctbl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.lsctbl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.hal3a.v3.nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.nvram.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.hal3a.v3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.v3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.halisp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halisp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halsensor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.iopipe.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.pdtblgen.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.pdtblgen.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.utils.sensorprovider.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.vhdr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcam3a_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam3a_imem.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.3dnr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.dngop.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.eis.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.fdft.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.flicker.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.fsc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.gyro.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.ispfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.ispfeature.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.lmv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.lsc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.nr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.nr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.platform.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.platform2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.utility.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.warp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamdrv_tuning_mgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcamera2ndk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera2ndk_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcares_naptr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcarrierconfig.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libccci_util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcharon-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcharon-ss.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcheckpid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcheckpid.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_hidl@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_hidl@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_hidl@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_hidl_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_hidl_plugin.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_mtk_c2store.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_c2store.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_mtk_vdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_vdec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_mtk_venc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_mtk_venc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_soft_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_common.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_soft_mtk_alacdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mtk_alacdec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_soft_mtk_apedec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mtk_apedec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mtk_imaadpcmdec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_soft_mtk_mp3dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mtk_mp3dec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_soft_mtk_msadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_soft_mtk_msadpcmdec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_vndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vndk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_vpp_qt_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vpp_qt_plugin.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcodec2_vpp_rs_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcodec2_vpp_rs_plugin.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcomposer_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcomposer_ext.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libconnfem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconnfem.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcppbor_external.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppbor_external.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcppcose_rkp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppcose_rkp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcrypto-mdapp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-mdapp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcurl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl-md.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcurl_xcap_md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcurl_xcap_md.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdecrypt.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpframework.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libdrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrm.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdynamiclog.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libeffecthal.base.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature.face.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature.stereo.provider.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeature_3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature_3dnr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature_fsc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature_lmv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeature_rss.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeatureiodrv_mem.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfft_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libforkexecwrap.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libformatter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libformatter.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgf_ca.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_ca.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgf_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgf_hal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libglslcompiler.so:$(TARGET_COPY_OUT_VENDOR)/lib/libglslcompiler.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgoodixhwfingerprint.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgoodixhwfingerprint.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_extra.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_metadata.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libh264dec_customize.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_customize.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libh264dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sa.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libh264dec_sd.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_sd.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libh264dec_se.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264dec_se.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libheichal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libheichal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhidltransport.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidltransport.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhwbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwbinder.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhwc2on1adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwc2on1adapter.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwc2onfbadapter.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwm.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libicd_decoder.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libifcutils_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio_plat_drv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio_plat_pipe.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimsg_log.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libion_ulit.so:$(TARGET_COPY_OUT_VENDOR)/lib/libion_ulit.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libipsec_ims_shr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha-oal_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeymaster41.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster41.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeymaster4_1support.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster4_1support.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeymaster4support.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster4support.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeymaster_messages.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_messages.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeymaster_portable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymaster_portable.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeystore-engine-wifi-hidl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeystore-wifi-hidl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkmsetkey.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libksensor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/liblogwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblogwrap_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblpcnr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmemtrack_GL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemtrack_GL.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmemunreachable.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmemunreachable.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmibokeh_mt6768.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmibokeh_mt6768.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminiui.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmipc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmagent.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmml.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmnetlink_v104.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmnl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp3dec_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmp4enc_xa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_xa.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpvr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsnr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmt@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmt@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtcloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtcloader.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtk-fusion-ril-prop-vsim.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk-fusion-ril-prop-vsim.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk-ril.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtk_bsg.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_bsg.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_drvb.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkares.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.atmseventmgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.eventcallback.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.featurepipe.capture.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.featurepipe.streaming.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam.featurepipe.vsdof_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.featurepipe.vsdof_util.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.logicalmodule.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_3rdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_3rdparty.core.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_3rdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_3rdparty.customer.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_3rdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_3rdparty.mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_3rdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_3rdparty.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_calibration_convertor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_calibration_provider.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_debugutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_device3_app.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_device3_app.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_device3_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_device3_hal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_device3_hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_device3_hidl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_device3_hidlutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_device3_hidlutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_device3_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_device3_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_devicesessionpolicy.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_diputils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_exif.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_fdvt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_fdvt.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_featurepolicy.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_featureutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_featureutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_fwkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_fwkutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_grallocutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_hwnode.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_hwutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_imem.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_imgbuf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_imgbuf.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_metadata.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_metastore.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_modulefactory_aaa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulefactory_aaa.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulefactory_custom.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_modulefactory_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulefactory_drv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulefactory_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulehelper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipeline.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipeline_fbm.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinemodel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinemodel.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinemodel_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinemodel_adapter.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinemodel_capture.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinemodel_session.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinemodel_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinemodel_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinemodel_zsl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinepolicy-aov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinepolicy-aov.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinepolicy-security.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinepolicy.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_pipelinepolicy_factory.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_prerelease.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_rsc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_rsc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_scenariorecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_scenariorecorder.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_stdutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_streamutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_synchelper.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_sysutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_tuning_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_ulog.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkconfig.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkconfigutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkmipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkmipc-ril.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtknetcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtknetcap.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtknetutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtknetutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkperf_client_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkperf_client_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkproperty.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkproperty.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkrillog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrillog.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkrilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkrilutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkshifter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkshifter_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkspparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkspparser.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtksysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtksysutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtktinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtktinyxml.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libmtkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkutils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libnbaio_mono.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnbaio_mono.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libneuropilot_hal_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuropilot_hal_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_sec.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libnvramagentclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvramagentclient.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnxp_extamp_intf.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpcap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcap.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperfctl_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpixelflinger.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpowerhal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_cust_base.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_prot.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqparamparser.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpqpconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqpconfig.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libpuresoftkeymasterdevice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpuresoftkeymasterdevice.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libratconfig.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/librcs_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_interface.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_volte_core.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/librilfusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilfusion.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/librt_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib/librt_extamp_intf.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsensor_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensor_custom.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsfplugin_ccodec_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsfplugin_ccodec_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libshmemcompat.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemcompat.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libshmemutil.so:$(TARGET_COPY_OUT_VENDOR)/lib/libshmemutil.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimaka.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsimlock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimlock.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsimmelock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimmelock.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsl_fp_impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsl_fp_impl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsoft_attestation_cert.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsrv_um.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsrv_um.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libssl-mdapp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-mdapp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_bufferpool@2.0.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstereoinfoaccessor_vsdof.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstorage_otp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstrongswan.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysenv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libteei_daemon_vfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libteei_daemon_vfs.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libtqvalidate.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtqvalidate.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libtranslator_mapi_v3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_mapi_v3.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libtranslator_mdmi_v2.8.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_mdmi_v2.8.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libtranslator_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtranslator_utils.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrm.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libufwriter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libufwriter.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libusc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libusc.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libutinterface_custom_md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutinterface_custom_md.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libutinterface_md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutinterface_md.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_oal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvcodec_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_utility.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv_header_stub.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libverno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libverno.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvia-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvia-ril.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libviamipc-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib/libviamipc-ril.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvolte_core_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_core_shr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvolte_xdmc_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_xdmc_shr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvp8dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp8dec_sa.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvp9dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp9dec_sa.ca7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libvt_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvt_custom.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwapi.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifi-hal.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwifitest.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwpfa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpfa.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libmockdrmcryptoplugin.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/meta_wifi_data.so \
     vendor/xiaomi/ice/proprietary/vendor/lib/mibokeh_mt6768_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/lib/mibokeh_mt6768_opencl.bin \
     vendor/xiaomi/ice/proprietary/vendor/lib/mibokeh_mt6768_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/lib/mibokeh_mt6768_parameter.bin \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/bt_drv_connac1x.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv_connac1x.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/connfem.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/connfem.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/fmradio_drv_mt6631.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv_mt6631.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/mi_memory.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mi_memory.ko \
     vendor/xiaomi/ice/proprietary/vendor/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.alias \
     vendor/xiaomi/ice/proprietary/vendor/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.dep \
     vendor/xiaomi/ice/proprietary/vendor/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.load \
     vendor/xiaomi/ice/proprietary/vendor/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.softdep \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/mt6357-accdet.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mt6357-accdet.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/trace_mmstat.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/trace_mmstat.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko \
+    vendor/xiaomi/ice/proprietary/vendor/lib/mt6761/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6761/libdpframework.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/mt6761/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6761/libmtk_drvb.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/mt6761/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6761/libpq_prot.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/ov02b_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b_mipi_raw_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/ov02b_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b_mipi_raw_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_i_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_i_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_i_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_i_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_iii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_iii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_iii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_iii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_india_i_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_india_i_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_india_i_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_india_i_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_india_iii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_india_iii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k4h7_india_iii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k4h7_india_iii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_i_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_i_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_i_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_i_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_iii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_iii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_iii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_iii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_india_i_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_india_i_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_india_i_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_india_i_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_india_iii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_india_iii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sams_s5k5e9_india_iii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sams_s5k5e9_india_iii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc500cs_ii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc500cs_ii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc500cs_ii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc500cs_ii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc500cs_india_ii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc500cs_india_ii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc500cs_india_ii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc500cs_india_ii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc800cs_ii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc800cs_ii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc800cs_ii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc800cs_ii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc800cs_india_ii_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc800cs_india_ii_IdxMgr.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sc_sc800cs_india_ii_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/sc_sc800cs_india_ii_tuning.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/sensors.camera.light.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.camera.light.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/shared-file-region-aidl-cpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/shared-file-region-aidl-cpp.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.aee@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.aee@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.aee@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.apmonitor@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.atci@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.atci@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.audio@7.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@7.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.ccap@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.ccap@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.frhandler@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.isphal@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.isphal@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.isphal@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.lomoeffect@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.lomoeffect@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.postproc@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.security@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.composer_ext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.composer_ext@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.dmc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.dmc@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.dmc@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.dmc@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.dmc@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.dmc@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.engineermode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.engineermode@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.engineermode@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.engineermode@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.engineermode@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.engineermode@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.engineermode@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.engineermode@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.lbs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.lbs@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.log@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.log@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mdmonitor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mdmonitor@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mmagent@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.6.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.mtkradioex@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkradioex@3.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.netdagent@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.power@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.10.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.10.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.11.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.11.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.12.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.12.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.13.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.13.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.14.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.14.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.15.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.15.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.3.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.4.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.5.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.6.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.7.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.7.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.8.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.9.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.9.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.rcs@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.rcs@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.silead.hardware.fingerprintext@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.silead.hardware.fingerprintext@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.misys@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.misys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.misys@2.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.misys@3.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mtdservice@1.0.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.mtdservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mtdservice@1.1.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/vendor.xiaomi.hardware.mtdservice@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mtdservice@1.2.so \
+    vendor/xiaomi/ice/proprietary/vendor/lib/wechat.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/wechat.beanpod.so \
     vendor/xiaomi/ice/proprietary/vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/0102030405060708090a0b0c0d0e0f10.ta \
     vendor/xiaomi/ice/proprietary/vendor/thh/ta/511ead0a000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/511ead0a000000000000000000000000.ta \
     vendor/xiaomi/ice/proprietary/vendor/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/7778c03fc30c4dd0a319ea29643d4d4b.ta \
@@ -560,7 +1385,12 @@ PRODUCT_PACKAGES += \
     NetworkStackResOverlay \
     TetheringResOverlay \
     com.fingerprints.extension \
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.boot@1.2 \
+    android.hardware.cas@1.2-service-lazy \
     android.hardware.dumpstate@1.1-service.xiaomi \
+    android.hardware.health@2.1 \
+    android.hardware.usb@1.2-service-mediatekv2 \
     android.hardware.wifi.hostapd \
     android.hardware.wifi.supplicant \
     android.hardware.wifi@1.0-service \
@@ -569,764 +1399,17 @@ PRODUCT_PACKAGES += \
     lbs_hidl_service@1.0 \
     lights-mtk-default \
     manifest_android.hardware.drm@1.4-service.clearkey \
+    manifest_android.hardware.drm@1.4-service.widevine \
     manifest_hwcomposer \
+    manifest_media_c2_V1_1_default \
     manifest_vendor.xiaomi.hardware.mtdservice \
     power-default \
+    vendor.xiaomi.hardware.misys@1.0 \
+    vendor.xiaomi.hardware.misys@2.0 \
+    vendor.xiaomi.hardware.misys@3.0 \
     vibrator-mtk-default
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/ice/proprietary/vendor/lib/android.hardware.vibrator-V2-ndk.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.vibrator-V2-ndk.so
 
 PRODUCT_PACKAGES += ImsService
-
-PRODUCT_PACKAGES += doeapp-memtester
-
-PRODUCT_PACKAGES += \
-    AgentTest \
-    SoterProvisioningTool \
-    aee_aedv \
-    aee_dumpstatev \
-    aeev \
-    atcid \
-    audiocmdservice_atci \
-    bip \
-    ccci_mdinit \
-    charge_logger \
-    bp_kmsetkey_ca \
-    em_hidl \
-    ccci_rpcd \
-    dtc_vendor \
-    factory \
-    autobt \
-    dconfig \
-    dmc_core \
-    cal_tool \
-    dexecutor \
-    epdg_wod \
-    fuelgauged \
-    hostapd_cli \
-    atci_service \
-    doeapp-sat \
-    android.hardware.bluetooth@1.1-service-mediatek \
-    android.hardware.graphics.allocator@4.0-service-mediatek \
-    android.hardware.keymaster@4.1-service.beanpod \
-    android.hardware.audio.service.mediatek \
-    android.hardware.lights-service.mediatek
-
-PRODUCT_PACKAGES += \
-    charon \
-    jpegtool \
-    loghidlvendorservice \
-    kmsetkey \
-    ipsec_mon \
-    md_monitor_ctrl \
-    mnld \
-    md_monitor \
-    android.hardware.drm@1.4-service-lazy.widevine \
-    android.hardware.media.c2@1.2-mediatek \
-    android.hardware.sensors@2.0-service.multihal-mediatek \
-    android.hardware.vibrator-service.mediatek \
-    camerahalserver \
-    hostapd \
-    merged_hal_service \
-    mtkfusionrild \
-    vendor.mediatek.hardware.aee@1.1-service \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-service \
-    vendor.mediatek.hardware.mtkpower@1.0-service \
-    vendor.mediatek.hardware.mmagent@1.1-service \
-    vendor.mediatek.hardware.nvram@1.1-service-lazy \
-    vendor.mediatek.hardware.pq@2.2-service \
-    vendor.xiaomi.hardware.misys@1.0-service \
-    vendor.xiaomi.hardware.misys@2.0-service \
-    vendor.xiaomi.hardware.misys@3.0-service \
-    vendor.silead.hardware.fingerprintext@1.0-service \
-    wpa_supplicant \
-    vendor.mediatek.hardware.mms@1.6-service \
-    vtservice_hidl
-
-PRODUCT_PACKAGES += \
-    gsm0710muxd \
-    meta_tst \
-    mrdump_tool \
-    mtd@1.2 \
-    mtk_agpsd \
-    mtk_pkm_service \
-    mtk_plpath_utils_ota \
-    muxreport \
-    netdagent \
-    netdc \
-    nv_routing \
-    mt6660_calibration \
-    pvrhwperfd \
-    rcs_volte_stack \
-    rt5512_calibration \
-    rttv \
-    sensors_test \
-    starter \
-    stp_dump3 \
-    stroke
-
-PRODUCT_PACKAGES += \
-    teei_daemon \
-    thermal \
-    thermal_manager \
-    thermalloadalgod \
-    volte_imsm_93 \
-    volte_md_status \
-    volte_rcs_ua \
-    volte_stack \
-    volte_ua \
-    wfca \
-    volte_imcb \
-    wmt_launcher \
-    wlan_assistant \
-    wmt_loader \
-    wpa_cli
-
-PRODUCT_PACKAGES += \
-    libcam.halisp \
-    libcamalgo.fsc \
-    libSonyIMX386PdafLibraryWrapper \
-    libudf \
-    libminiui \
-    libcodec2_mtk_c2store \
-    libcharon-ss \
-    vendor.mediatek.hardware.pq@2.8 \
-    vendor.mediatek.hardware.pq@2.9 \
-    libpqparamparser \
-    vendor.mediatek.hardware.pq@2.11 \
-    libteei_daemon_vfs \
-    libbessound_hd_mtk_vendor \
-    libsimmelock \
-    vendor.mediatek.hardware.camera.postproc@1.0 \
-    libSonyIMX386PdafLibrary \
-    libforkexecwrap \
-    vendor.xiaomi.hardware.mtdservice@1.1 \
-    libusc \
-    libmemtrack_GL \
-    libcodec2_soft_mtk_imaadpcmdec \
-    libbluetooth_audio_session_mediatek \
-    libheichal \
-    vendor.mediatek.hardware.nvram@1.1 \
-    libcamalgo.utility \
-    libmtkcam_3rdparty.customer \
-    libaurisysdemo \
-    libhwm \
-    libstrongswan \
-    libmnetlink_v104 \
-    vendor.mediatek.hardware.engineermode@1.1 \
-    libaalservice \
-    libcam.feature_utils \
-    libmtkmipc-ril \
-    sc_sc800cs_india_ii_IdxMgr \
-    libion_mtk \
-    libsl_fp_impl \
-    libmsnr \
-    libmtkcam_imgbuf \
-    libcamdrv_tuning_mgr \
-    libasn1c_mdmi \
-    libmtk-fusion-ril-prop-vsim \
-    vendor.mediatek.hardware.power@2.0 \
-    libmnl \
-    libmtkcam_imem \
-    libcomposer_ext \
-    libthermalalgo \
-    libmtkcam_pipelinepolicy-aov \
-    libmtkcam_ulog \
-    vendor.mediatek.hardware.keymaster_attestation@1.1 \
-    libMtkSpeechEnh \
-    libksensor \
-    libvt_custom \
-    libmtkcam_fdvt \
-    libaudiofmtconv \
-    libnvram_sec \
-    libcam.utils.sensorprovider \
-    vendor.mediatek.hardware.engineermode@1.3 \
-    libarcsoft_hdr_detection \
-    libvolte_xdmc_shr \
-    vendor.mediatek.hardware.dmc@1.1 \
-    libSonyIMX338PdafLibraryWrapper \
-    libfeature_lmv \
-    libbluetooth_mtk \
-    libcamalgo.gyro \
-    libmmagent \
-    libmtksysutils \
-    libratconfig \
-    libnxp_extamp_intf \
-    sams_s5k5e9_india_i_tuning \
-    libmtkcam_rsc \
-    libTEECommon \
-    libcodec2_vpp_rs_plugin \
-    libspeechparser_vendor \
-    libpqframework \
-    libconnfem \
-    libfeature.stereo.provider \
-    libcodec2_mtk_vdec \
-    libbluetooth_hw_test \
-    libvcodec_utility \
-    libmtkrilutils \
-    libcamalgo.dngop \
-    libgpud \
-    libasn1c_core \
-    vendor.mediatek.hardware.netdagent@1.0 \
-    libmtkcam_3rdparty.core \
-    libwpfa \
-    liblogwrap_vendor \
-    libimageio_plat_pipe \
-    libcodec2_soft_mtk_alacdec \
-    libcamalgo.platform \
-    com.fingerprints.extension@1.0 \
-    libmtkcam_pipelinemodel_adapter \
-    libstorage_otp \
-    libfgauge_gm30 \
-    libmtkshifter_vendor \
-    vendor.mediatek.hardware.audio@6.1 \
-    sc_sc500cs_ii_IdxMgr \
-    libmtkcam_pipelinemodel_session \
-    libmtkcam.eventcallback \
-    vendor.mediatek.hardware.pq@2.4 \
-    libcheckpid \
-    sams_s5k4h7_iii_IdxMgr \
-    sams_s5k5e9_india_iii_IdxMgr \
-    libnvram \
-    vendor.mediatek.hardware.mtkradioex@3.0 \
-    libmtktinyxml \
-    libcamalgo.nr \
-    libkmsetkey \
-    sams_s5k5e9_i_IdxMgr \
-    libformatter \
-    vendor.mediatek.hardware.mms@1.6 \
-    librilfusion \
-    libfeature_rss \
-    vendor.mediatek.hardware.apmonitor@2.0 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
-    vendor.xiaomi.hardware.mtdservice@1.0 \
-    libmtkcam_exif \
-    libmtkcam_device3_hidl \
-    libpq_prot \
-    libvp8dec_sa.ca7 \
-    libPVRScopeServices \
-    vendor.silead.hardware.fingerprintext@1.0 \
-    libSQLiteModule_VER_ALL \
-    sams_s5k4h7_iii_tuning \
-    libmtkcam_diputils \
-    libarcsoft_high_dynamic_range \
-    libvp9dec_sa.ca7 \
-    sc_sc500cs_india_ii_tuning \
-    libssl-mdapp \
-    wechat.beanpod \
-    libSonyIMX519PdafLibrary \
-    libmtkcam.atmseventmgr \
-    libcamalgo.eis \
-    libtqvalidate \
-    libmtkcam_device3_utils \
-    libmtkcam_3rdparty \
-    libmtkcam_pipeline_fbm \
-    libapu_mdw \
-    libmtkcam.featurepipe.capture \
-    libcodec2_soft_mtk_apedec \
-    sc_sc800cs_ii_IdxMgr \
-    lib3a.af.core \
-    libmtkspparser \
-    libgf_hal \
-    vendor.mediatek.hardware.mms@1.5 \
-    libmtkcam_pipelinemodel_capture \
-    libmtkcam_pipeline \
-    libmtkconfig \
-    libvpu5 \
-    sams_s5k5e9_iii_tuning \
-    sams_s5k4h7_india_i_tuning \
-    vendor.mediatek.hardware.mms@1.4 \
-    libtranslator_utils \
-    libneuropilot_hal_utils \
-    libgralloc_metadata \
-    libgpu_aux \
-    libvia-ril \
-    libaudio_param_parser-vnd \
-    audio_common-aidl-cpp \
-    libmtkcam_device3_hidlutils \
-    libfeatureiodrv_mem \
-    libcam.vhdr \
-    libmtkcam_pipelinepolicy \
-    vendor.xiaomi.hardware.misys@3.0 \
-    libmp3dec_mtk \
-    vendor.mediatek.hardware.pq@2.2 \
-    libmtkcam_metastore \
-    libcam.pdtblgen \
-    libgf_ca \
-    vendor.mediatek.hardware.pq@2.7 \
-    libJpgEncPipe \
-    libmtkares \
-    meta_wifi_data \
-    libmtkrillog \
-    vendor.mediatek.hardware.pq@2.12 \
-    libcamalgo.ispfeature \
-    libmml \
-    libmp4enc_xa.ca7 \
-    libmtkcam_grallocutils \
-    libmibokeh_mt6768 \
-    libmtkcam_pipelinepolicy_factory \
-    libbluetooth_relayer \
-    vendor.mediatek.hardware.audio@7.1 \
-    libpqpconfig \
-    lib_speech_enh \
-    libmtkconfigutils \
-    libgralloctypes_mtk \
-    vendor.mediatek.hardware.camera.security@1.0 \
-    libhevce_sb.ca7.android \
-    libsimlock \
-    libh264dec_sa.ca7 \
-    libvcodec_oal \
-    libh264dec_sd.ca7 \
-    lib3a.log \
-    libcamalgo.platform2 \
-    libvcodecdrv_header_stub \
-    libcam.halsensor \
-    libvendor.goodix.hardware.biometrics.fingerprint@2.1 \
-    libimsg_log \
-    libmtk-ril \
-    libaudiocompensationfilter_vendor \
-    vendor.mediatek.hardware.camera.frhandler@1.0 \
-    libdecrypt \
-    libmtkutils \
-    android.hardware.vibrator-V2-ndk \
-    libcamalgo.lmv \
-    libIMGegl \
-    libmipc \
-    libaudiocomponentengine_vendor \
-    libwo \
-    libacdk \
-    libcamalgo.3dnr \
-    vendor.mediatek.hardware.camera.isphal@1.1 \
-    lib3a.ae \
-    libcam.chdr \
-    libSonyIMX338PdafLibrary \
-    vendor.mediatek.hardware.dmc@1.2 \
-    libPVROCL \
-    libmtkcam_calibration_provider \
-    libfeature.face \
-    lib3a.awb.core \
-    libaudioprimarydevicehalifclient \
-    libhydra \
-    libperfctl_vendor \
-    libmtkcutils \
-    libfeature_fsc \
-    vendor.mediatek.hardware.pq@2.13 \
-    vendor.mediatek.hardware.pq@2.5 \
-    libcam.hal3a.v3.lsctbl \
-    libimageio \
-    libmmprofile \
-    vendor.xiaomi.hardware.mtdservice@1.2 \
-    libarcsoft_low_light_hdr \
-    libviamipc-ril \
-    libbt-vendor \
-    libh264dec_customize \
-    libmtcloader \
-    ov02b_mipi_raw_tuning \
-    libmtk_drvb \
-    libcvsd_mtk \
-    libHEVCdec_sa.ca7.android \
-    libmtknetcap \
-    libmtkcam_3rdparty.mtk \
-    libcodec2_soft_mtk_mp3dec \
-    libcurl_xcap_md \
-    libblisrc32_vendor \
-    libcam.hal3a.v3.dng \
-    libmtkcam.logicalmodule \
-    libapmonitor_vendor \
-    libaudiotoolkit_vendor \
-    libh264dec_se.ca7 \
-    libsensor_custom \
-    libaudiocomponentenginec \
-    libmtkcam_modulefactory_custom \
-    libpower_timer \
-    libcrypto-mdapp \
-    vendor.mediatek.hardware.lbs@1.0 \
-    libmtkcam_debugutils \
-    libmtkcam.featurepipe.vsdof_util \
-    sams_s5k4h7_i_tuning \
-    libmtkcam_featureutils \
-    libthha \
-    libimageio_plat_drv \
-    vendor.mediatek.hardware.pq@2.14 \
-    vendor.mediatek.hardware.nvram@1.0 \
-    libmtkcam_modulefactory_drv \
-    libaal_cust \
-    sams_s5k5e9_india_iii_tuning \
-    libcurl-md \
-    libmtkcam_scenariorecorder \
-    libcamalgo \
-    libmtkcam_calibration_convertor \
-    lib3a.af \
-    vendor.mediatek.hardware.composer_ext@1.0 \
-    sams_s5k5e9_i_tuning \
-    vendor.mediatek.hardware.pq@2.6 \
-    libcarrierconfig \
-    libmtkcam.featurepipe.streaming \
-    vendor.xiaomi.hardware.misys@2.0 \
-    libmtkcam_hwnode \
-    libmt@1.2 \
-    libmtkcam_tuning_utils \
-    libcam.hal3a.v3.nvram \
-    sams_s5k4h7_india_iii_tuning \
-    vendor.mediatek.hardware.camera.isphal@1.0 \
-    libpixelflinger \
-    libcam.hal3a.cctsvr \
-    libstagefrighthw \
-    liblpcnr \
-    libpowerhal \
-    lib_lowlight \
-    sams_s5k4h7_india_i_IdxMgr \
-    libadpcmdec_mtk \
-    vendor.mediatek.hardware.pq@2.15 \
-    libcam3a_imem \
-    vendor.mediatek.hardware.pq@2.1 \
-    vendor.mediatek.hardware.atci@1.0 \
-    libSonyIMX519PdafLibraryWrapper \
-    libdynamiclog \
-    vendor.mediatek.hardware.bluetooth.audio@2.1 \
-    libaudioloudc \
-    vendor.mediatek.hardware.bluetooth.audio@2.2 \
-    libverno \
-    libaal_key \
-    libmtkcam_hwutils \
-    libmtkcam_modulefactory_aaa \
-    vendor.mediatek.hardware.mmagent@1.0 \
-    libwapi \
-    libcam.hal3a.v3 \
-    libmtklimiter_vendor \
-    vendor.mediatek.hardware.aee@1.1 \
-    vendor.mediatek.hardware.engineermode@1.2 \
-    vendor.mediatek.hardware.rcs@2.0 \
-    libtranslator_mapi_v3.0 \
-    sams_s5k4h7_india_iii_IdxMgr \
-    vendor.mediatek.hardware.aee@1.0 \
-    libmtkproperty \
-    libPVRMtkutils \
-    libmtkcam_fwkutils \
-    libion_ulit \
-    libmtkcam_device3_hal \
-    libgralloc_extra \
-    libbluetooth_mtk_pure \
-    libpowerhalwrap_vendor \
-    libaudiocompensationfilterc \
-    libDefaultFpsActor \
-    libmtkcam_pipelinemodel \
-    libmtkcam_featurepolicy \
-    libmtkcam_streamutils \
-    libwpa_client \
-    libSonyIMX230PdafLibrary \
-    libutinterface_custom_md \
-    librt_extamp_intf \
-    libcustom_nvram \
-    vendor.mediatek.hardware.pq@2.3 \
-    vendor.mediatek.hardware.log@1.0 \
-    libbwc \
-    vendor.mediatek.hardware.keymaster_attestation@1.0 \
-    libcam.iopipe \
-    libfft_vendor \
-    libcamalgo.warp \
-    libmtkcam_modulehelper \
-    libmtkcam_synchelper \
-    sc_sc800cs_india_ii_tuning \
-    libmtkcam_stdutils \
-    libglslcompiler \
-    vendor.mediatek.hardware.mms@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.1 \
-    libeffecthal.base \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0 \
-    libapusys \
-    libcamdrv \
-    libpq_cust_base \
-    sams_s5k4h7_i_IdxMgr \
-    libpkm \
-    sensors.camera.light \
-    libspeech_enh_lib \
-    sc_sc500cs_ii_tuning \
-    libcamalgo.flicker \
-    libvolte_core_shr \
-    libarcsoft_beautyshot \
-    libcamalgo.fdft \
-    libjpeg-alpha-oal_vendor \
-    vendor.mediatek.hardware.camera.ccap@1.0 \
-    libicd_decoder \
-    libmsbc_mtk \
-    sams_s5k5e9_iii_IdxMgr \
-    libcodec2_soft_mtk_msadpcmdec \
-    libmtknetutils \
-    libsysenv \
-    libmtkcam_pipelinemodel_utils \
-    lbs_hidl_service-impl \
-    ov02b_mipi_raw_IdxMgr \
-    librcs_volte_core \
-    lib3a.ae.core \
-    libOpenCL \
-    libcamalgo.lsc \
-    libsrv_um \
-    libnvramagentclient \
-    libmtkcam_sysutils \
-    libmtkcam_modulefactory_utils \
-    vendor.mediatek.hardware.mms@1.1 \
-    sams_s5k5e9_india_i_IdxMgr \
-    libDR \
-    libutinterface_md \
-    vendor.mediatek.hardware.pq@2.10 \
-    libFrameRecord \
-    libufwriter \
-    libNoFpsActor \
-    libbluetoothem_mtk \
-    sc_sc500cs_india_ii_IdxMgr \
-    libfeature_3dnr \
-    libmtkcam_prerelease \
-    sc_sc800cs_ii_tuning \
-    libmpvr \
-    libh264enc_sa.ca7 \
-    libapusys_edma \
-    libmtkcam_metadata \
-    libmtkcam_devicesessionpolicy \
-    lib3a.flash \
-    vendor.xiaomi.hardware.misys@1.0 \
-    lib3a.awb \
-    libstereoinfoaccessor_vsdof \
-    vendor.mediatek.hardware.pq@2.0 \
-    libMtkOmxGsmDec \
-    libipsec_ims_shr \
-    libSonyIMX230PdafLibraryWrapper \
-    libmtkcam_device3_app \
-    libasn1c_mapi \
-    libaudiocustparam_vendor \
-    libmtkperf_client_vendor \
-    libwvhidl \
-    vendor.mediatek.hardware.mms@1.3 \
-    libcam.hal3a.log \
-    vendor.mediatek.hardware.engineermode@1.0 \
-    vendor.mediatek.hardware.mmagent@1.1 \
-    libmp4enc_sa.ca7 \
-    libmtkhardware_legacy \
-    libged \
-    libmtkcam_pipelinepolicy-security \
-    libtranslator_mdmi_v2.8.2 \
-    libcares_naptr \
-    libjpeg-alpha_vendor \
-    vendor.mediatek.hardware.mdmonitor@1.0 \
-    librcs_interface \
-    libwifitest \
-    libtrm \
-    libladder \
-    libaudiodcrflt_vendor \
-    vendor.mediatek.hardware.camera.atms@1.0 \
-    libcodec2_vpp_qt_plugin \
-    libcodec2_mtk_venc \
-    libmtkcam_pipelinemodel_zsl \
-    libaal_mtk \
-    libcameracustom \
-    android.hardware.power-service-mediatek \
-    libMtkOmxMp3Dec \
-    libccci_util \
-    vendor.mediatek.hardware.dmc@1.0 \
-    vendor.mediatek.hardware.mtkpower@1.0 \
-    libfile_op \
-    vendor.mediatek.hardware.mms@1.2 \
-    libvcodecdrv \
-    libgoodixhwfingerprint \
-    libmtk_bsg \
-    libMtkOmxCore \
-    libmtkcam_pipelinepolicy-smvr \
-    libifcutils_mtk \
-    lib_iir \
-    libdpframework \
-    libsimaka \
-    libmpbase \
-    vendor.mediatek.hardware.mtkpower@1.2 \
-    librgbwlightsensor \
-    libaedv \
-    libpq_prot \
-    libmtk_drvb \
-    libdpframework \
-    libmockdrmcryptoplugin \
-    libwvdrmengine \
-    libMEOW_qt \
-    libGLESv2_mtk \
-    libMEOW_trace \
-    libMEOW_gift \
-    libGLES_meow \
-    libEGL_mtk \
-    libGLESv1_CM_mtk \
-    lights.mt6761 \
-    fingerprint.fpc.default \
-    vendor.mediatek.hardware.camera.lomoeffect@1.0-impl \
-    vendor.xiaomi.hardware.misys@3.0-impl \
-    android.hardware.gnss@2.1-impl-mediatek \
-    android.hardware.bluetooth@1.1-impl-mediatek \
-    vibrator.mt6761 \
-    vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
-    vendor.mediatek.hardware.pq@2.15-impl \
-    android.hardware.audio@6.0-impl-mediatek \
-    libSoftGatekeeper \
-    android.hardware.thermal@2.0-impl \
-    awinic.audio.effect \
-    android.hardware.graphics.mapper@4.0-impl-mediatek \
-    vendor.mediatek.hardware.camera.atms@1.0-impl \
-    gralloc.rogue \
-    vendor.mediatek.hardware.bluetooth.audio@2.2-impl \
-    audio.r_submix.mt6761 \
-    kmsetkey.beanpod \
-    memtrack.default \
-    hwcomposer.mt6761 \
-    gatekeeper.default \
-    fingerprint.goodix.default \
-    vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
-    android.hardware.boot@1.0-impl-1.2-mtkimpl \
-    audio.primary.mt6761 \
-    fingerprint.silead.default \
-    android.hardware.sensors@2.X-subhal-mediatek \
-    vendor.xiaomi.hardware.misys@2.0-impl \
-    gps.default \
-    vendor.mediatek.hardware.mtkpower@1.2-impl \
-    vendor.mediatek.hardware.mms@1.6-impl \
-    vendor.xiaomi.hardware.misys@1.0-impl \
-    sensors.mt6761 \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
-    android.hardware.audio@7.0-impl-mediatek \
-    android.hardware.gnss-impl-mediatek \
-    android.hardware.camera.provider@2.6-impl-mediatek \
-    vendor.mediatek.hardware.nvram@1.1-impl \
-    gatekeeper.beanpod \
-    thermal_hal \
-    libaudiopreprocessing_mtk
-
-PRODUCT_PACKAGES += libmockdrmcryptoplugin
-
-PRODUCT_PACKAGES += libwvdrmengine
-
-PRODUCT_PACKAGES += libMEOW_qt
-
-PRODUCT_PACKAGES += libGLESv2_mtk
-
-PRODUCT_PACKAGES += libMEOW_trace
-
-PRODUCT_PACKAGES += libMEOW_gift
-
-PRODUCT_PACKAGES += libGLES_meow
-
-PRODUCT_PACKAGES += libEGL_mtk
-
-PRODUCT_PACKAGES += libGLESv1_CM_mtk
-
-PRODUCT_PACKAGES += lights.mt6761
-
-PRODUCT_PACKAGES += fingerprint.fpc.default
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.camera.lomoeffect@1.0-impl
-
-PRODUCT_PACKAGES += vendor.xiaomi.hardware.misys@3.0-impl
-
-PRODUCT_PACKAGES += android.hardware.gnss@2.1-impl-mediatek
-
-PRODUCT_PACKAGES += android.hardware.bluetooth@1.1-impl-mediatek
-
-PRODUCT_PACKAGES += vibrator.mt6761
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.bluetooth.audio@2.1-impl
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.pq@2.15-impl
-
-PRODUCT_PACKAGES += android.hardware.audio@6.0-impl-mediatek
-
-PRODUCT_PACKAGES += libSoftGatekeeper
-
-PRODUCT_PACKAGES += android.hardware.thermal@2.0-impl
-
-PRODUCT_PACKAGES += awinic.audio.effect
-
-PRODUCT_PACKAGES += android.hardware.graphics.mapper@4.0-impl-mediatek
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.camera.atms@1.0-impl
-
-PRODUCT_PACKAGES += gralloc.rogue
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.bluetooth.audio@2.2-impl
-
-PRODUCT_PACKAGES += audio.r_submix.mt6761
-
-PRODUCT_PACKAGES += kmsetkey.beanpod
-
-PRODUCT_PACKAGES += memtrack.default
-
-PRODUCT_PACKAGES += hwcomposer.mt6761
-
-PRODUCT_PACKAGES += gatekeeper.default
-
-PRODUCT_PACKAGES += fingerprint.goodix.default
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.keymaster_attestation@1.1-impl
-
-PRODUCT_PACKAGES += android.hardware.boot@1.0-impl-1.2-mtkimpl
-
-PRODUCT_PACKAGES += audio.primary.mt6761
-
-PRODUCT_PACKAGES += fingerprint.silead.default
-
-PRODUCT_PACKAGES += android.hardware.sensors@2.X-subhal-mediatek
-
-PRODUCT_PACKAGES += vendor.xiaomi.hardware.misys@2.0-impl
-
-PRODUCT_PACKAGES += gps.default
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.mtkpower@1.2-impl
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.mms@1.6-impl
-
-PRODUCT_PACKAGES += vendor.xiaomi.hardware.misys@1.0-impl
-
-PRODUCT_PACKAGES += sensors.mt6761
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.videotelephony@1.0-impl
-
-PRODUCT_PACKAGES += android.hardware.audio@7.0-impl-mediatek
-
-PRODUCT_PACKAGES += android.hardware.gnss-impl-mediatek
-
-PRODUCT_PACKAGES += android.hardware.camera.provider@2.6-impl-mediatek
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.nvram@1.1-impl
-
-PRODUCT_PACKAGES += gatekeeper.beanpod
-
-PRODUCT_PACKAGES += thermal_hal
-
-PRODUCT_PACKAGES += libaudiopreprocessing_mtk
-
-PRODUCT_PACKAGES += libsimaka
-
-PRODUCT_PACKAGES += libmpbase
-
-PRODUCT_PACKAGES += vendor.mediatek.hardware.mtkpower@1.2
-
-PRODUCT_PACKAGES += librgbwlightsensor
-
-PRODUCT_PACKAGES += libaedv
-
-PRODUCT_PACKAGES += \
-    wmt_drv.ko
-
-PRODUCT_PACKAGES += mi_memory.ko
-
-PRODUCT_PACKAGES += wmt_chrdev_wifi.ko
-
-PRODUCT_PACKAGES += wlan_drv_gen4m.ko
-
-PRODUCT_PACKAGES += fpsgo.ko
-
-PRODUCT_PACKAGES += fmradio_drv_mt6631.ko
-
-PRODUCT_PACKAGES += mt6357-accdet.ko
-
-PRODUCT_PACKAGES += trace_mmstat.ko
-
-PRODUCT_PACKAGES += bt_drv_connac1x.ko
-
-PRODUCT_PACKAGES += met.ko
-
-PRODUCT_PACKAGES += connfem.ko
-
-PRODUCT_PACKAGES += gps_drv.ko
