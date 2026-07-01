@@ -1,8 +1,8 @@
 android_app_import {
     name: "ImsService",
     apk: "ImsService.apk",
+    certificate: "platform",
     privileged: true,
-    presigned: true,
     dex_preopt: {
         enabled: false,
     },
